@@ -1,0 +1,173 @@
+<html>
+<head>
+  <title> Photos </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="abtme.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+  .mySlides {
+    display:none;
+  }
+  .container1 {
+    width: 64.5%;
+    height: auto;
+    padding-top: 45px; /* Top as suggested by t.niese */
+    padding-left: 45px; /* Adjust the value as needed to get it to be centered */
+    position: absolute;
+    top: 114%;
+    left: 20%;
+    background-color: #bf9d95;
+  }
+  .container2 {
+    width: 64.5%;
+    height: auto;
+    padding-top: 45px; /* Top as suggested by t.niese */
+    padding-left: 45px; /* Adjust the value as needed to get it to be centered */
+    position: absolute;
+    top: 139%;
+    left: 20%;
+    background-color: #bf9d95;
+  }
+  .btn {
+    background-color: RoyalBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: DodgerBlue;
+  }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <a class="active" href="AboutMe.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="AboutMe.html#AboutMe"><i class="fa fa-child"></i>About Me</a>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-paint-brush"></i>Hobbies
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="reading.html"></i>Reading</a> <br />
+        <a href="travelling.html">Travelling</a> <br />
+        <a href="painting.html">Painting</a>
+      </div>
+    </div>
+    <a href="AboutMe.html#Contact"><i class="fa fa-fw fa-envelope"></i>Contact Me</a>
+    <a href="resume.xml"><i class="fa fa-address-book"></i>CV</a>
+    <a href="photos.html"><i class="fa fa-image"></i>Photos</a>
+  </div>
+  <div class="parallax" style="height:170%;">
+    <div class="w3-content w3-display-container"  style="position:absolute; top:14%; left:20%;">
+      <h2 style="text-align:center;"> Photos clicked by Me<br /></h2>
+      <img class="mySlides" src="https://s23527.pcdn.co/wp-content/uploads/2019/01/Aquamarine.jpg.optimal.jpg" style="width:100%">
+      <img class="mySlides" src="https://cdn.allwallpaper.in/wallpapers/2000x1333/13790/flowers-in-the-morning-2000x1333-wallpaper.jpg" style="width:100%">
+      <img class="mySlides" src="https://joellepoulos.com/wp-content/uploads/2015/05/mother-holding-babies-hand-black-and-white-photography.jpg" style="width:100%">
+      <img class="mySlides" src="https://live.staticflickr.com/5148/5701093120_d1459a5db5_b.jpg" style="width:100%">
+      <img class="mySlides" src="https://webneel.com/daily/sites/default/files/images/daily/04-2013/23-rain-photography.jpg" style="width:100%">
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <div class="container1" id="InputSection">
+      <h4>Liked the picture? Please do drop a comment...</h4>
+      <form>
+        <table>
+          <tr>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" id="NAME" name="NAME" placeholder="Name">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <textarea class="form-control" rows="2" cols="30" name="COMMENT" id="COMMENT" placeholder="Comment"></textarea><br>
+              </div>
+            </td>
+            <td style="width:20%; text-align:right;">
+              <div class="form-group">
+                <button class="btn" type="button" onclick="addComment()"><i class="fa fa-paper-plane"></i> Add Comment</button><br>
+              </div>
+            </td>
+            <tr>
+              <td>
+                Did you like the picture?
+                <input type="radio" name="likePic" value="y"> Yes
+                <input type="radio" name="likePic" value="n"> No
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <ol>
+        <div class="container2" id="OutputSection"></div>
+      </ol>
+    </div>
+    <div class="footer">
+      <button onclick="topFunction()" class="button">↑ To the top ↑</button> <br /><br />
+      Copyright © 2019 by Saniya Kolangde
+    </div>
+    <script type="text/javascript">
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+
+    var db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
+    db.transaction(function (tx) {
+      tx.executeSql('CREATE TABLE IF NOT EXISTS COMMENTS (id INTEGER PRIMARY KEY, NAME TEXT, COMMENT VARCHAR)');
+    });
+    db.transaction( function (tx) {
+      tx.executeSql('SELECT * FROM COMMENTS', [], function (tx, results) {
+        var len = results.rows.length;
+        var i;
+        for (i = 0; i < len; i++) //Display previously created COMMENTs
+        {
+          createNewComment(results.rows.item(i).NAME, results.rows.item(i).COMMENT);
+        }
+      }, null);
+    });
+
+    function addComment()
+    {
+      var NAME = document.getElementById("NAME").value;
+      var COMMENT =  document.getElementById("COMMENT").value;
+      var query = `INSERT INTO COMMENTS (NAME, COMMENT) VALUES ("${NAME}", "${COMMENT}")`;
+      alert("Comment has been successfully added!");	//alert msg of what user typed into the form ^
+
+      db.transaction(function (tx) {
+        tx.executeSql(query);	//place NAME and COMMENT in db table
+      });
+      createNewComment(NAME, COMMENT);	//create new COMMENT; creates <p> that displays my NAME and COMMENT below
+    }
+
+    function createNewComment(NAME, COMMENT)
+    {
+      var paragraph = document.createElement("p");
+      paragraph.innerHTML = `<li><b>${NAME}</b></li><br>${COMMENT}<br><br>`;
+
+      document.getElementById("OutputSection").appendChild(paragraph);	//add new NAME and COMMENT
+      console.log("Output Section: "+document.getElementById("OutputSection").innerHTML);
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<html>
+<head>
+  <title> Painting </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="abtme.css">
+  <style>
+  .container {
+    position: absolute;
+
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #900C3F;
+  }
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  .text {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <a class="active" href="AboutMe.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="AboutMe.html#AboutMe"><i class="fa fa-child"></i>About Me</a>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-paint-brush"></i>Hobbies
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="reading.html"></i>Reading</a> <br />
+        <a href="travelling.html">Travelling</a> <br />
+        <a href="painting.html">Painting</a>
+      </div>
+    </div>
+    <a href="AboutMe.html#Contact"><i class="fa fa-fw fa-envelope"></i>Contact Me</a>
+    <a href="resume.xml"><i class="fa fa-address-book"></i>CV</a>
+    <a href="photos.html"><i class="fa fa-image"></i>Photos</a>
+  </div>
+  <div class="parallax" style="height:250%;">
+    <div style="position:absolute; top:12%; left:34%;">
+      <img src="paintinglogo.png" alt="Painting Logo">
+    </div>
+    <div class="section" style="height:620px; width: 100%; position:absolute; top:46%;">
+      <div class="column">
+        <img src="https://pm1.narvii.com/6321/99f2d638b04d793f58741246b7dd66d800d31086_hq.jpg" alt="Painting" width="550" height="600">
+      </div>
+      <div class="column" style="top:8%; width:25%;">
+        <p style="text-align:center; font-style:italic;"> Why paint? </p>
+        <p style="font-family:Calibri; font-size:22px;"> <span class="firstcharacter">W</span> e all have a demanding routine, and every once in a while would love to escape the rut of our daily lives.
+          Or when we yearn for something exciting and different, crave new challenges. Painting is the ultimate therapy! <br /> <br />
+          One of the reasons I love painting is that it exposes us the world in a way that changes the way we look at it, it gives a whole new perspective. <br /> <br />
+          Check out some of my paintings that I have shared with you below...
+        </p>
+      </div>
+    </div>
+    <div class="container" style="top:146%; left:7%;">
+      <img src="https://images.saatchiart.com/saatchi/1313211/art/6583975/5653645-UWNXAXJH-6.jpg" alt="Flowers Painting">
+      <div class="overlay">
+        <div class="text">Flower Oil Painting</div>
+      </div>
+    </div>
+    <div class="container" style="top:156%; left:67%;">
+      <img src="https://i.pinimg.com/originals/62/d2/07/62d20768843e6476dca9769f6624fef7.jpg" alt="Sunflower Painting" height="270" width="360">
+      <div class="overlay">
+        <div class="text">Sunflower Oil Painting</div>
+      </div>
+    </div>
+    <div class="container" style="top:191%; left:34%;">
+      <img src="https://i.etsystatic.com/16197095/r/il/0c4af6/1922346683/il_570xN.1922346683_7dtl.jpg" alt="Cat Painting" height="400" width="330">
+      <div class="overlay">
+        <div class="text">Cat Watercolour Painting</div>
+      </div>
+    </div>
+    <div class="container" style="top:146%; left:34%;">
+      <img src="https://i.pinimg.com/600x315/ed/8b/fd/ed8bfdfeab19516eb19e313a061c9ada.jpg" alt="Sunset Painting" height="300" width="460">
+      <div class="overlay">
+        <div class="text">Sunset Beach Acrylic Painting</div>
+      </div>
+    </div>
+    <div class="container" style="top:201%; left:6%;">
+      <img src="https://i.pinimg.com/originals/c8/93/be/c893be8b5b0b65aec8d3dbf077d9080a.jpg" alt="Village Painting" height="300" width="400">
+      <div class="overlay">
+        <div class="text">Village Watercolour Painting</div>
+      </div>
+    </div>
+    <div class="container" style="top:197%; left:58%;">
+      <img src="https://render.fineartamerica.com/images/rendered/default/print/8.000/6.250/break/images/artworkimages/medium/1/natures-grandeur-chris-steele.jpg" alt="Mountains Painting" height="330" width="450">
+      <div class="overlay">
+        <div class="text">Mountains Oil Painting</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <button onclick="topFunction()" class="button">↑ To the top ↑</button> <br /><br />
+    Copyright © 2019 by Saniya Kolangde
+  </div>
+  <script src="abtme.js"></script>
+</body>
+</html>

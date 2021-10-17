@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title> Reading </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="abtme.css">
+  <style>
+    #button1{
+        background-color: #2d7a61;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <a class="active" href="AboutMe.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="AboutMe.html#AboutMe"><i class="fa fa-child"></i>About Me</a>
+    <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-paint-brush"></i>Hobbies
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="reading.html"></i>Reading</a> <br />
+      <a href="travelling.html">Travelling</a> <br />
+      <a href="painting.html">Painting</a>
+    </div>
+  </div>
+    <a href="AboutMe.html#Contact"><i class="fa fa-fw fa-envelope"></i>Contact Me</a>
+    <a href="resume.xml"><i class="fa fa-address-book"></i>CV</a>
+    <a href="photos.html"><i class="fa fa-image"></i>Photos</a>
+  </div>
+  <div class="parallax" style="height:322%;">
+    <div style="position:absolute; top:14%; left:34%;">
+      <img src="readinglogo.png" alt="Reading Logo">
+    </div>
+    <div class="section" style="height:620px; width: 100%; position:absolute; top:46%;">
+      <div class="column">
+        <img src="https://s-media-cache-ak0.pinimg.com/736x/ae/ee/04/aeee04e8dd58ad0452441caa381c9d47--reading-aesthetic-book-aesthetic.jpg" alt="Read" width="500" height="600">
+      </div>
+      <div class="column" style="top:8%; width:25%;">
+        <p style="text-align:center; font-style:italic;"> Why read? </p>
+        <p style="font-family:Calibri; font-size:22px;"> <span class="firstcharacter">W</span> e all have a demanding routine, and every once in a while would love to escape the rut of our daily lives.
+          Or when we yearn for something exciting and different, crave new experiences but jusy do not find the time. Reading is the ultimate therapy! <br /> <br />
+          One of the reasons I love reading is because it exposes us to this world of fantasies that enhance the way we think. It allows a way to escape and just broaden your perspectives. <br /> <br />
+          </p>
+      </div>
+    </div>
+    <div style="position:absolute; top:135%; left:35%; text-align:center;">
+      <h3> View some of my favourite books: </h3>
+        <button id="button1" onClick="getReceiptAjax()">
+          Click here
+        </button>
+        <br />
+        <span id="books" style="margin-left:40px;"> </span>
+      </div>
+  </div>
+  <div class="footer">
+    <button onclick="topFunction()" class="button">↑ To the top ↑</button> <br /><br />
+    Copyright © 2019 by Saniya Kolangde
+  </div>
+  <script src="abtme.js"></script>
+</body>
+</html>

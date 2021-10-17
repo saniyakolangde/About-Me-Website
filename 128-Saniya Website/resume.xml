@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="resume.xsl"?>
+<!DOCTYPE Resume  [
+ <!ELEMENT Resume (me, education*, achievements*, experience*, skills*)>
+ <!ELEMENT me (address, phone, email)>
+ <!ELEMENT address (#PCDATA)>
+ <!ELEMENT phone (#PCDATA)>
+ <!ELEMENT email (#PCDATA)>
+
+ <!ELEMENT education (institution, level, grade, year)>
+ <!ELEMENT institution (#PCDATA)>
+ <!ELEMENT level (#PCDATA)>
+ <!ELEMENT grade (#PCDATA)>
+ <!ELEMENT year (#PCDATA)>
+
+ <!ELEMENT achievements (title, year)>
+ <!ELEMENT title (#PCDATA)>
+ <!ELEMENT year (#PCDATA)>
+
+ <!ELEMENT experience (job, organization, duration, description*)>
+ <!ELEMENT job (#PCDATA)>
+ <!ELEMENT organization (#PCDATA)>
+ <!ELEMENT duration (#PCDATA)>
+ <!ELEMENT description (#PCDATA)>
+
+ <!ELEMENT skills (name)>
+ <!ELEMENT name (#PCDATA)>
+]>
+
+  <Resume>
+    <me>
+      <address> 12th Avenue, Mapple Street, USA </address>
+      <phone> (123) 456-7891 </phone>
+      <email> saniya@email.com </email>
+    </me>
+    <education>
+      <institution> Dubai Gem Pvt. School  </institution>
+      <level> AS Level </level>
+      <grade> 3 A's and 1 B </grade>
+      <year> Graduation Year 2018 </year>
+    </education>
+    <education>
+      <institution> University of Wollongong  </institution>
+      <level> BSc of Computer Science </level>
+      <grade> Distinction </grade>
+      <year> Graduation Year 2022 </year>
+    </education>
+    <achievements>
+      <title>
+        Participated in Skyline Business Competiton
+      </title>
+      <year> 2016 </year>
+    </achievements>
+    <achievements>
+      <title>
+        Participated in Skyline Business Competiton
+      </title>
+      <year> 2017 </year>
+    </achievements>
+    <achievements>
+      <title>
+        Participated in Website Development Competiton
+      </title>
+      <year> 2018 </year>
+    </achievements>
+    <experience>
+      <job> Intern </job>
+      <organization> Crane and Jenkins </organization>
+      <duration> May 2018 to August 2018 </duration>
+      <description> Integrate code changes, test code changes, and document code changes </description>
+      <description> Developed automation scripts to test storage appliances in Python</description>
+    </experience>
+    <skills>
+      <name> SQL </name>
+      <name> Java </name>
+      <name> Python </name>
+      <name> HTML </name>
+      <name> MATHLAB </name>
+    </skills>
+  </Resume>

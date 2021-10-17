@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> About Me </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="abtme.css">
+</head>
+<body>
+  <div id="navbar">
+    <a class="active" href="AboutMe.html"><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="#AboutMe"><i class="fa fa-child"></i>About Me</a>
+    <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-paint-brush"></i>Hobbies
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="reading.html"></i>Reading</a> <br />
+      <a href="travelling.html">Travelling</a> <br />
+      <a href="painting.html">Painting</a>
+    </div>
+  </div>
+    <a href="#Contact"><i class="fa fa-fw fa-envelope"></i>Contact Me</a>
+    <a href="resume.xml"><i class="fa fa-address-book"></i>CV</a>
+    <a href="photos.html"><i class="fa fa-image"></i>Photos</a>
+  </div>
+
+  <div class="parallax">
+    <div style="position:absolute; top:20%; left:22%;">
+      <img src="mainlogo.png" alt="Logo">
+    </div>
+  </div>
+  <span id="AboutMe"></span>
+  <div class="section" style="height:699px; font-size:36px">
+  <div class="column">
+    <img src="me.jpg" alt="Me" width="500" height="660">
+  </div>
+  <div class="column" style="top:8%; width:25%;">
+    <h3> Hello, I'm Saniya </h3>
+    <p style="font-family:Calibri; font-size:22px;"> <span class="firstcharacter">W</span> elcome to my page. I am a Computer Science student at Unviersity of Wollongong in Dubai.
+    I am born & brought up in Dubai. I graduated from Dubai Gem Private School in June 2018. I immensely enjoy reading, writing, photography, painting & travelling. One of my favourite authors is Sidney Sheldon.
+    <br /> <br />
+    I also enjoy listening to music & cooking. It acts as a stress reliever for me. I have done two level of professional Horse Riding from Al Ahli Club and Shooting from Sharjah Golf and Shooting Club.
+    <br />I love animals, especially Dogs and Parakeets. I hope you enjoy my website ♥</p>
+  </div>
+  </div>
+  <div class="parallax" style="height: 70%;">
+    <div class="column" style="left:8%; top:15%; width:30%;">
+      <img src="bird.gif" alt="bird" width="350" height="300">
+    </div>
+    <div class="column" style="left:9%; width:21%; top:25%; text-align:center;">
+      <h3> View some photos clicked by me </h3>
+      <hr />
+      <a href="photos.html" class="button">View Photos</a>
+      </h3>
+    </div>
+    <div class="column" style="left:15%; top:15%; width:30%;">
+      <img src="flower.jpg" alt="flower" width="350" height="300">
+    </div>
+  </div>
+
+  <div class="section" id="Contact" style="font-size:36px">
+    <div class="contactform">
+      <h2> Contact Me </h2>
+      <form  name="myForm" action="message.html" onsubmit="return validateForm()" method="POST">
+      First Name <br />
+      <input type="text" name="fname" placeholder="Your name.." > <br />
+      Last Name <br />
+      <input type="text" name="lastname" placeholder="Your last name.."> <br />
+       Email Address <br />
+      <input type="text" name="email" placeholder="Your email id.." pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please enter a valid email ID"> <br />
+      Your Message <br />
+      <textarea rows="4" cols="50" name="message" > Enter your message here...</textarea>
+      <br />
+      <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <div class="footer">
+    <button onclick="topFunction()" class="button">↑ To the top ↑</button> <br /><br />
+    Copyright © 2019 by Saniya Kolangde
+  </div>
+<script src="abtme.js"> </script>
+</body>
+</html>

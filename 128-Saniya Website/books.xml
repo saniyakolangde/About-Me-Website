@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<books>
+ <Book>
+   <img>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506953631l/1301626._SY475_.jpg</img>
+   <bookName>If Tomorrow Comes</bookName>
+   <author>Sidney Sheldon</author>
+   <link>https://www.goodreads.com/book/show/14554.If_Tomorrow_Comes</link>
+ </Book>
+ <Book>
+   <img>https://images-na.ssl-images-amazon.com/images/I/51lleBSOsdL._SX319_BO1,204,203,200_.jpg</img>
+   <bookName>Digital Fortress</bookName>
+   <author>Dan Brown</author>
+   <link>https://www.goodreads.com/book/show/11125.Digital_Fortress</link>
+ </Book>
+ <Book>
+   <img>https://kbimages1-a.akamaihd.net/78834a36-e3cd-4847-a7e3-b01649798b67/1200/1200/False/tell-me-your-dreams.jpg</img>
+   <bookName>Tell Me Your Dreams</bookName>
+   <author>Sidney Sheldon</author>
+   <link> https://www.goodreads.com/book/show/43326.Tell_Me_Your_Dreams</link>
+ </Book>
+ <Book>
+   <img>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1428599961l/24383122.jpg</img>
+   <bookName>Murder House</bookName>
+   <author>James Patterson</author>
+   <link> https://www.goodreads.com/book/show/23717678-the-murder-house</link>
+ </Book>
+ <Book>
+   <img>https://dwtr67e3ikfml.cloudfront.net/bookCovers/2089b58a5577eedee38b5c8e9f7f0889aa710a1d</img>
+   <bookName>Storm And Silence</bookName>
+   <author>Robert Thier</author>
+   <link>https://www.goodreads.com/book/show/24035804-storm-and-silence</link>
+ </Book>
+</books>
